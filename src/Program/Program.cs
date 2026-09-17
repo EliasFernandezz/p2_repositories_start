@@ -5,6 +5,7 @@
 //------------------------------------------------------------------------------
 
 using System;
+using Ucu.Poo.Repositories;
 
 namespace Ucu.Poo.Exercise
 {
