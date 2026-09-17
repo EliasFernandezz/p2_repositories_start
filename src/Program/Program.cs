@@ -18,7 +18,13 @@ namespace Ucu.Poo.Exercise
         /// </summary>
         public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            var carsDatabase = new Repository<Car>();
+            carsDatabase.Add(new Car("Corolla", "Toyota", 2020));
+            Car found = carsDatabase.Find(c => c.Maker == "Toyota");
+
+            var moviesCatalog = new Repository<Movie>();
+            moviesCatalog.Add(new Movie("Matrix", 1999));
+            Movie foundMovie = moviesCatalog.Find(m => m.Year == 1999);
         }
     }
 }
